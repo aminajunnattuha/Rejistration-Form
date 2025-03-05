@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <!-- ভিউপোর্ট সেট করা হচ্ছে, যাতে মোবাইল এবং অন্যান্য ডিভাইসে ঠিকমতো দেখা যায় -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In and Sign Up Form - Easy Tutorials</title>
+
+    <!-- CSS ফাইল লিংক করা হয়েছে -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome আইকন সিএসএস লিংক -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
 </head>
 <body>
+
+    <!-- প্রধান কন্টেইনার -->
     <div class="container">
         <div class="form-box">
             <h1 id="title">Sign Up</h1>
             <form>
                 <div class="input-group">
+                    
+                    <!-- নাম ইনপুট ফিল্ড -->
                     <div class="input-field" id="nameField">
-                        <i class="fa-solid fa-user"></i> <!-- User icon -->
+                        <i class="fa-solid fa-user"></i> <!-- ইউজার আইকন -->
                         <input type="text" placeholder="Name">
                     </div>
                     
+                    <!-- ইমেইল ইনপুট ফিল্ড -->
                     <div class="input-field">
-                        <i class="fa-solid fa-envelope"></i> <!-- Envelope (Email) icon -->
-                         <input type="email" placeholder="Email">
+                        <i class="fa-solid fa-envelope"></i> <!-- ইমেইল আইকন -->
+                        <input type="email" placeholder="Email">
                     </div>
 
-                  <div class="input-field">
-                        <i class="fa-solid fa-lock"></i> <!-- Lock icon -->
-                         <input type="password" placeholder="Password">
+                    <!-- পাসওয়ার্ড ইনপুট ফিল্ড -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i> <!-- লক আইকন -->
+                        <input type="password" placeholder="Password">
                     </div>
+
+                    <!-- পাসওয়ার্ড ভুলে গেলে লিঙ্ক -->
                     <p>Lost password <a href="#">Click Here!</a></p>
                 </div>
+
+                <!-- বাটন ফিল্ড -->
                 <div class="btn-field">
                     <button type="button" id="signupBtn">Sign up</button>
                     <button type="button" id="signinBtn" class="disable">Sign in</button>
                 </div>
 
-
             </form>
         </div>
     </div>
 
+    <!-- জাভাস্ক্রিপ্ট ফাইল লিংক -->
     <script src="./script.js"></script>
 </body>
 </html>

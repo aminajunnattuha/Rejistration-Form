@@ -1,3 +1,4 @@
+/* সকল এলিমেন্টের জন্য ডিফল্ট স্টাইল রিসেট করা হয়েছে */
 *{
     margin: 0;
     padding: 0;
@@ -5,15 +6,18 @@
     box-sizing: border-box;
 }
 
+/* মূল কন্টেইনারের ডিজাইন সেট করা হয়েছে */
 .container{
     width: 100%;
     height: 100vh;
+    /* ব্যাকগ্রাউন্ড ইমেজ এবং গ্রেডিয়েন্ট প্রয়োগ করা হয়েছে */
     background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)), url(459-background.png);
     background-position: center;
     background-size: cover;
     position: relative;
 } 
 
+/* ফর্মের জন্য প্রধান বক্স */
 .form-box{
     width: 90%;
     max-width: 450px;
@@ -25,13 +29,16 @@
     padding: 50px 60px 70px;
     text-align: center;
 }
+
+/* ফর্মের শিরোনামের ডিজাইন */
 .form-box h1{
     font-size: 30px;
     margin-bottom: 60px;
     color: #3c00a0;
     position: relative;
-
 }
+
+/* শিরোনামের নিচে একটি ছোট আন্ডারলাইন যোগ করা হয়েছে */
 .form-box h1::after{
     content: '';
     width: 30px;
@@ -44,6 +51,7 @@
     transform: translateX(-50%);
 }
 
+/* ইনপুট ফিল্ডের ডিজাইন */
 .input-field{
     background: #eaeaea;
     margin: 15px 0;
@@ -54,19 +62,23 @@
     transition: max-height 0.5s;
     overflow: hidden;
 }
+
+/* ইনপুট টেক্সট ফিল্ডের স্টাইল */
 input{
     width: 100%;
     background: transparent;
     border: 0;
     outline: 0;
     padding: 18px 15px;
-
 }
+
+/* ইনপুট ফিল্ডের আইকনের স্টাইল */
 .input-field i{
     margin-left: 15px;
     color: #999;
 }
 
+/* ভুলে যাওয়া পাসওয়ার্ডের লিঙ্কের ডিজাইন */
 form p{
     text-align: left;
     font-size: 13px;
@@ -75,11 +87,15 @@ form p a{
     text-decoration: none;
     color: #3c00a0;
 }
+
+/* বোতামের জন্য কন্টেইনার */
 .btn-field{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
+/* বোতামের স্টাইল সেট করা হয়েছে */
 .btn-field button{
     flex-basis: 48%;
     background: #3c00a0;
@@ -91,9 +107,13 @@ form p a{
     cursor: pointer;
     transition: background 1s;
 }
+
+/* ইনপুট ফিল্ডের গ্রুপের উচ্চতা নির্ধারণ করা হয়েছে */
 .input-group{
     height: 280px;
 }
+
+/* নিষ্ক্রিয় বোতামের ডিজাইন */
 .btn-field button.disable{
     background: #eaeaea;
     color: #555;
